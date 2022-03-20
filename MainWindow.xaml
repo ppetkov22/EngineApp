@@ -18,7 +18,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Content="Button" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" />
+        <TextBox Text="Interdisciplinary Project" Foreground="White" Background="Black" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" />
         <Button Content="Button" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" />
         <Button Content="Button" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
         <Button Content="Button" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" />
