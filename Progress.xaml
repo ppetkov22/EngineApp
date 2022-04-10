@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EngineApp"
         mc:Ignorable="d"
-        Title="Progress" Height="450" Width="800">
-    <Grid>
-        
+        Title="Progress" Height="450" Width="800" WindowState="Maximized" WindowStartupLocation="Manual" ResizeMode="NoResize" Closed="Window_Closed">
+    <Grid Background="DimGray">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="2" Grid.ColumnSpan="3" Margin="10px" Grid.Row="9" Content="Back" Background="Honeydew" FontSize="20" Click="Button_Click"  />
+
+        <ListBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="9" Grid.ColumnSpan="2" Background="LightGray" HorizontalAlignment="Center">
+            <ListBoxItem FontSize="25" Content="Steps:" HorizontalAlignment="Center"></ListBoxItem>
+            <ListBoxItem FontSize="20" Content="Research on the engine:" HorizontalAlignment="Left"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - How do the different engine components function"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - Research on  the best engine type"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content=""></ListBoxItem>
+            
+            <ListBoxItem FontSize="20" Content="Design of the engine model:" HorizontalAlignment="Left"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - Chosing the best design application"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - Dealing with design issues"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content=""></ListBoxItem>
+            <ListBoxItem FontSize="20" Content="3D-printing of the parts:" HorizontalAlignment="Left"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - Engine block, crankshaft, pistons, and rods"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content=""></ListBoxItem>
+            <ListBoxItem FontSize="20" Content="Graph analysis" HorizontalAlignment="Left"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - Analyzing engine data graphs"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content=""></ListBoxItem>
+            <ListBoxItem FontSize="20" Content="Building the application on C#" HorizontalAlignment="Left"></ListBoxItem>
+            <ListBoxItem FontSize="16" Content="   - Using WPF.Net Framework for building an application"></ListBoxItem>
+        </ListBox>
+        <Image x:Name="progressImage" Margin="10px" Grid.Column="2" Grid.Row="0" Grid.RowSpan="9" Grid.ColumnSpan="5" Source="Screenshot (67).png" />
     </Grid>
 </Window>

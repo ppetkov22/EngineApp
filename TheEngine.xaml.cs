@@ -15,13 +15,27 @@ using System.Windows.Shapes;
 namespace EngineApp
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Interaction logic for TheEngine.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class TheEngine : Window
     {
-        public Window2()
+        private readonly MainWindow mainWindow;
+
+        public TheEngine(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            this.mainWindow.Show();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            this.mainWindow.Close();
         }
     }
 }

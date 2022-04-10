@@ -19,9 +19,23 @@ namespace EngineApp
     /// </summary>
     public partial class Graphs : Window
     {
-        public Graphs()
+        private readonly MainWindow mainWindow;
+
+        public Graphs(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            this.mainWindow.Show();
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            this.mainWindow.Close();
         }
     }
 }

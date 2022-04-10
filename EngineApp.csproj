@@ -122,5 +122,50 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG_20220225_093859.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG_20220301_131650.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="EngineC#Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Screenshot %2867%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="EngineCapture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Screenshot %2868%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG_20220301_131629.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG_20220311_105853.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="civicr_mecha1_1440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="K20-Featured.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="preview-928x522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images %282%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

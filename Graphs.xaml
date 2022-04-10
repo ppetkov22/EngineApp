@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EngineApp"
         mc:Ignorable="d"
-        Title="Graphs" Height="450" Width="800">
-    <Grid>
+        Title="Graphs" Height="450" Width="800" WindowState="Maximized" Closed="Window_Closed">
+    <Grid Background="PapayaWhip">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="2" Grid.ColumnSpan="3" Margin="10px" Grid.Row="9" Content="Back" Background="Honeydew" FontSize="20"  Click="Button_Click_1"/>
+        <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="9" Margin="10px" Source="image1.png" />
+        <Image Grid.Column="5" Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="10px" Source="image2.png" />
+        <Image Grid.Column="5" Grid.Row="4" Grid.ColumnSpan="4" Grid.RowSpan="5" Margin="10px" Source="image3.png" />
+
+        <ListBox Grid.Column="3" Grid.Row="0" Grid.RowSpan="7" Grid.ColumnSpan="2" Background="LightYellow" Margin="5px">
+            <ListBoxItem FontSize="20" Content="Graphs:"></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - We implemented graphs to show the"></ListBoxItem>
+            <ListBoxItem FontSize="18" Content="   dependancy between horsepower and torque"></ListBoxItem>
+            <ListBoxItem Content=""></ListBoxItem>
+
+            <ListBoxItem FontSize="20" Content="Outcomes:"></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - Horsepower is a function of rotation speed."></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - We can assume that horsepower is a function "></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - of both rpm and torque."></ListBoxItem>
+            
+            <ListBoxItem FontSize="18" Content=" - Torque isn't entirely dependent on rotation speed"></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - => we should look into compression in order "></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - to find the mathematical interpretation of torque."></ListBoxItem>
+        </ListBox>
         
     </Grid>
 </Window>

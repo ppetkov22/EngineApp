@@ -1,12 +1,54 @@
-﻿<Window x:Class="EngineApp.Window2"
+﻿<Window x:Class="EngineApp.TheEngine"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EngineApp"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
-    <Grid>
-        
+        Title="TheEngine" Height="450" Width="800" WindowState="Maximized" Closed="Window_Closed">
+    <Grid Background="#50DBA1">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="2" Grid.ColumnSpan="3" Margin="10px" Grid.Row="9" Content="Back" Background="Honeydew" FontSize="20"  Click="Button_Click"/>
+        <ListBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" Grid.ColumnSpan="3" Margin="10px" Background="LightSeaGreen" >
+            <ListBoxItem FontSize="25" Content="Engine Facts"></ListBoxItem>
+            <ListBoxItem FontSize="8" Content="" ></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - The engine that we decided to use for our model is called Honda K-20" ></ListBoxItem>
+            <ListBoxItem FontSize="8" Content="" ></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - It is small and reliable, as well as easy to maintain"></ListBoxItem>
+            <ListBoxItem FontSize="8" Content="" ></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - People often use it for engine swaps for personal projects"></ListBoxItem>
+            <ListBoxItem FontSize="8" Content="" ></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - It is very easy to modify and has cheap replacement parts"></ListBoxItem>
+            <ListBoxItem FontSize="8" Content="" ></ListBoxItem>
+            <ListBoxItem FontSize="18" Content=" - The engine has a well known and simple configuration - in line 4 cylinder"></ListBoxItem>
+            
+            <ListBoxItem></ListBoxItem>
+        </ListBox>
+        <Image Grid.ColumnSpan="4" Grid.Column="3" Grid.Row="0" Grid.RowSpan="5" Margin="5px" Source="civicr_mecha1_1440.jpg" />
+        <Image Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="5" Grid.RowSpan="4" Margin="5,5,0,0" Source="K20-Featured.jpg" />
+        <Image Grid.Column="3" Grid.Row="5" Grid.RowSpan="4" Source="preview-928x522.jpg" Margin="75,0,26,0" Grid.ColumnSpan="2"/>
+        <Image Grid.Column="5" Margin="5,13,10,10" Grid.Row="5" Grid.RowSpan="4" Source="images (2).jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
